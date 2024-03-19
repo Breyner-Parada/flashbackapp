@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/flashbackapp/static/css/main.6938bbdf.css",
-    "main.js": "/flashbackapp/static/js/main.d2552386.js",
+    "main.js": "/flashbackapp/static/js/main.aed5a408.js",
     "index.html": "/flashbackapp/index.html",
     "main.6938bbdf.css.map": "/flashbackapp/static/css/main.6938bbdf.css.map",
-    "main.d2552386.js.map": "/flashbackapp/static/js/main.d2552386.js.map"
+    "main.aed5a408.js.map": "/flashbackapp/static/js/main.aed5a408.js.map"
   },
   "entrypoints": [
     "static/css/main.6938bbdf.css",
-    "static/js/main.d2552386.js"
+    "static/js/main.aed5a408.js"
   ]
 }
