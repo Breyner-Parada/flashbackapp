@@ -61,7 +61,7 @@ export const Post = ({ post, setCurrentId }) => {
     );
   };
 
-  const openPost = () => navigate(`/flashback/posts/${post._id}`);
+  const openPost = () => navigate(`/flashbackapp/posts/${post._id}`);
 
   return (
     <Card className={styles.card} raised elevation={6} sx={{borderRadius: '20px'}}>
