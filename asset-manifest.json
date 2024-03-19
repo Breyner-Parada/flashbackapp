@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/flashback/static/css/main.6938bbdf.css",
+    "main.js": "/flashback/static/js/main.bc0495c2.js",
+    "index.html": "/flashback/index.html",
+    "main.6938bbdf.css.map": "/flashback/static/css/main.6938bbdf.css.map",
+    "main.bc0495c2.js.map": "/flashback/static/js/main.bc0495c2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6938bbdf.css",
+    "static/js/main.bc0495c2.js"
+  ]
+}
