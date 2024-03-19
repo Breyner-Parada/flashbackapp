@@ -6,8 +6,6 @@ import { config } from "./config/index.js";
 import { fileURLToPath } from "url";
 import path from "path";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 const app = express();
 const port = config.port;
@@ -20,7 +18,7 @@ app.use(cors());
 routerWeb(app);
 
 app.get("*", (req, res) => {
-  res.sendFile(path("../public/index.html"));
+  res.sendFile(path.dirname("../public/index.html"));
 });
 
 app.get("/", (req, res) => {
