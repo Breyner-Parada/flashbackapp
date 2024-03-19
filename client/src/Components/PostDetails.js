@@ -41,7 +41,7 @@ export const PostDetails = () => {
   const recommendedPosts = posts.filter(({_id}) => _id !== post._id);
 
   const openPost = (_id) => {
-    navigate(`/flashback/posts/${_id}`);
+    navigate(`/posts/${_id}`);
   }
 
   return (

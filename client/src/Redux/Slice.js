@@ -108,7 +108,7 @@ export const newPosts = (post, navigate) => {
     try {
       dispatch(start_loading());
       const { data } = await createPosts(post);
-      navigate(`/flashback/posts/${data._id}`);
+      navigate(`/posts/${data._id}`);
       dispatch(addPosts(data));
       dispatch(end_loading());
     } catch (error) {
@@ -166,7 +166,7 @@ export const signin = (formData, Navigate) => {
     try {
       const { data } = await signIn(formData);
       dispatch(signUpUser(data));
-      Navigate("/flashback");
+      Navigate("/");
     } catch (error) {
       console.log(error);
     }
@@ -178,7 +178,7 @@ export const signup = (formData, Navigate) => {
     try {
       const { data } = await signUp(formData);
       dispatch(signUpUser(data));
-      Navigate("/flashback");
+      Navigate("/");
     } catch (error) {
       console.log(error);
     }

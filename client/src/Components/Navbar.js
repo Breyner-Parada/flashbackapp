@@ -50,7 +50,7 @@ export const Navbar = () => {
       <div className={styles.brandContainer}>
         <Typography
           component={Link}
-          to="/flashback"
+          to="/"
           className={styles.heading}
           sx={{ fontSize: "30px", fontWeight: 600 }}
           align="center"
@@ -60,7 +60,7 @@ export const Navbar = () => {
         <img
           className={styles.image}
           src="https://cdn.pixabay.com/user/2014/05/07/00-10-34-2_250x250.jpg"
-          alt="flashback"
+          alt="s"
           height="60"
         />
       </div>

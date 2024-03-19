@@ -62,7 +62,7 @@ export const Auth = () => {
       localStorage.setItem('user', JSON.stringify(token)); 
       const tokenDecoded = jwt_decode(token);
       localStorage.setItem('profile', JSON.stringify(tokenDecoded));
-      Navigate("/flashback");
+      Navigate("/");
     } catch (error) {
       console.log(error);
     }
