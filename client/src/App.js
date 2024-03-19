@@ -4,14 +4,14 @@ import { Navbar } from "./Components/Navbar.js";
 import { Home } from "./Components/Home.js";
 import { Auth } from "./Components/Auth/Auth.js";
 import { PostDetails } from "./Components/PostDetails.js";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
 
   const user = JSON.parse(localStorage.getItem('profile'));
 
   return (
-    <BrowserRouter forceRefresh={false}>
+    <HashRouter forceRefresh={false}>
       <Container maxWidth="xl">
         <Navbar />
         <Routes>
@@ -22,7 +22,7 @@ function App() {
           <Route path="/auth" element={!user ? <Auth />  : <Navigate to='/flashbackapp/posts' />} />
         </Routes>
       </Container>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
