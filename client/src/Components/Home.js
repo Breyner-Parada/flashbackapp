@@ -12,7 +12,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { Form } from "./Form.js";
 import { Posts } from "./Posts/Posts.js";
 import { useDispatch } from "react-redux";
-import { getPostsBySearch } from "../Redux/Slice";
+import { getPostsBySearch } from "../Redux/Slice.js";
 import { Paginate } from "./Pagination.js";
 import { ChipInput } from "../Utils/ChipInput.js";
 import styles from "../Styles/Home.module.css";
