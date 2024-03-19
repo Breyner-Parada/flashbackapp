@@ -15,11 +15,11 @@ function App() {
       <Container maxWidth="xl">
         <Navbar />
         <Routes>
-          <Route path="/flashbackapp" element={<Navigate to='/flashbackapp/posts' />} />
-          <Route path="/flashbackapp/posts" element={<Home />} />
-          <Route path="/flashbackapp/posts/search" element={<Home />} />
-          <Route path="/flashbackapp/posts/:id" element={<PostDetails />} />
-          <Route path="/auth" element={!user ? <Auth />  : <Navigate to='/flashbackapp/posts' />} />
+          <Route path="/" element={<Navigate to='/posts' />} />
+          <Route path="/posts" element={<Home />} />
+          <Route path="/posts/search" element={<Home />} />
+          <Route path="/posts/:id" element={<PostDetails />} />
+          <Route path="/auth" element={!user ? <Auth />  : <Navigate to='/posts' />} />
         </Routes>
       </Container>
     </HashRouter>
