@@ -19,7 +19,7 @@ app.use(express.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 routerWeb(app);
 
-app.get("*", (req, res) => {
+app.get("/*", (req, res) => {
   res.sendFile(path.join(__dirname, "/client/public/index.html"));
 });
 
